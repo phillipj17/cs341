@@ -6,7 +6,7 @@
  * - The options for the look of the chart to be drawn.
  * - How to draw the chart.
  *
- * @author: Tanya L. Crenshaw
+ * @author: Tanya L. Crenshaw and Jenna Rose Phillips
  * @since: Jan 6, 2015
  */
 
@@ -57,7 +57,11 @@ function drawChart() {
         },
 	legend: { 
 	    position: 'none' 
-	}
+		},
+	animation: {
+            "startup" : true,
+            "duration" : 500
+        },
     };
 
     // Create a new viz object using the google API -- specifically,
