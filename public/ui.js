@@ -33,10 +33,28 @@ var initialize = function() {
     // From this point forward, when the button is clicked, the                                                                   
     // toggle function shall be invoked.                                                                                           
     button.onclick = toggle;
+    
+    // Grab the 'Submit' button element, identified by the                                       
+    // 'submit-btn' id.                                                                          
+    button = document.getElementById('submit-btn');
 
+    // From this point forward, when the button is clicked, the                                 
+    // fetch function shall be invoked.                                                          
+    button.onclick = fetch;
+    
+};
+
+var fetch = function() {
+	
+	var yearInfo = document.getElementById('year');
+	var yearValue = yearInfo.value;
+	console.log(yearValue);
+	
+	vizController(yearValue);
 };
 
 // When this file is included at the bottom of the page,                                                                           
 // the js is loaded after the DOM is loaded.  It is a                                                                              
 // good time to initialize the UI elements in the page.                                                                            
 initialize();
+
