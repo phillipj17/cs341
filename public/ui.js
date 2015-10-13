@@ -4,6 +4,9 @@
  * Defines functionality for instrumenting the user-interface.                                                                     
  *                                                                                                                                 
  */
+var librs = librs || {} ;
+librs.ui = {} ;
+librs.ui = function() {
 
 var toggle = function() {
 
@@ -58,3 +61,7 @@ var fetch = function() {
 // good time to initialize the UI elements in the page.                                                                            
 initialize();
 
+}; //end module
+
+// invole module. 
+librs.ui();
